@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin-left: 40%;">
+<?php
+echo "Go To orderlist<br>";
+echo $this->tag->linkTo(['/orderlist/list/', 'Orderlist', 'class' => 'btn btn-primary']);
+echo "<br><br>";
+echo "Go To productlist<br>";
+echo $this->tag->linkTo(['/productlist', 'Productlist', 'class' => 'btn btn-danger']);
+echo "<br><br>";
+echo "Create Order<br>";
+echo $this->tag->linkTo(['/orderlist/order/', 'Create Order', 'class' => 'btn btn-dark']);
+echo "<br><br>";
+echo "Update the order status<br>";
+echo $this->tag->linkTo(['/orderlist/update/', 'Click here', 'class' => 'btn btn-primary']);
+echo "<br><br>";
+echo "Add Products<br>";
+echo $this->tag->linkTo(['/productlist/add/', 'Add Products', 'class' => 'btn btn-danger']);
+echo "<br><br>";
+echo "Add webhooks<br>";
+echo $this->tag->linkTo(['/webhooks', 'Webhooks', 'class' => 'btn btn-primary']);
+echo "<br><br>";
+
+?>
+</body>
+</html>

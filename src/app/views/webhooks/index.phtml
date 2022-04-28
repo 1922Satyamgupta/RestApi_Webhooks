@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webhooks</title>
+</head>
+<body style="margin-left: 40%;">
+<h4>ADD WEBHOOKS</h4><br><br>
+     <form action="/webhooks/hook/" method='post'>
+         <label for="username">Username:</label>
+    <input type="text" placeholder="Username" name='name'><br>
+    <label for="url">Enter URL:</label>
+    <input type="url" placeholder="url" name='url'><br>
+    <input type="checkbox" value='add_product' name='webhook[]' >For Add Product<br>
+    <input type="checkbox" value='update_product' name='webhook[]' >For Update product<br>
+    <button tyep="submit" value="Add">ADD</button>
+    </form>
+</body>
+</html>
